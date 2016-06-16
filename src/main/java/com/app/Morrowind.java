@@ -26,11 +26,11 @@ public class Morrowind {
 			}
 
 		} while (!(newGame).equalsIgnoreCase("y"));
-		
+
 		System.out.println("\nMORROWIND\n\n");
-				
+
 		Story001.instructions();
-		
+
 		SB.close();
 
 	}

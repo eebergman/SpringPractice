@@ -2,6 +2,8 @@ package com.story;
 
 import java.util.Scanner;
 
+import com.app.MyUtilities;
+
 public class Story001 {
 
 	private static Scanner SB = new Scanner(System.in);
@@ -19,7 +21,7 @@ public class Story001 {
 		story001_A(ADVANCE = SB.nextLine());
 	}
 
-	public static void story001_A(String string) {
+	public static void story001_A(String opening) {
 		System.out.println("Each event is proceeded by Prophecy. \n\tBut without the hero, there is no event. \n\n"
 				+ "-Zurin Arctus | the Underking\n");
 		ADVANCE = SB.nextLine();
@@ -38,22 +40,45 @@ public class Story001 {
 
 		System.out.println("\n" + "(Many fall, but one remains.)\n");
 
-		charCreation(ADVANCE = SB.nextLine());
+		story001_B(ADVANCE = SB.nextLine());
 
 	}
 
-	public static void charCreation(String jiub) {
+	public static void story001_B(String jiubTalks) {
 
 		System.out.println("[Jiub]\n" + "Wake up. \n" + "\t\tWe're here. \n" + "\tWhy are you shaking? \n"
 				+ "\t\t    Are you okay? \n" + "Wake up!");
 
-		ADVANCE = SB.nextLine();
+		story001_C(ADVANCE = SB.nextLine());
+	}
+
+	public static void story001_C(String whoAreyou) {
+
+		String charName = "a";
 
 		System.out.println("[Jiub]\n" + "What's your name?");
 
-		String charName = SB.nextLine();
+		charName = SB.nextLine();
 
-		System.out.println("Well, " + charName + " not even last night's storm could wake you. \n"
+		charName = MyUtilities.changeToUpper(charName);
+
+		while (charName.length() <= 2) {
+
+			charName = "a";
+
+			System.out.println("That can't possibly be your name.");
+
+			charName = SB.nextLine();
+
+			charName = MyUtilities.changeToUpper(charName);
+		}
+
+		story001_D(charName);
+	}
+
+	public static void story001_D(String playerName) {
+
+		System.out.println("\nWell, " + playerName + " not even last night's storm could wake you. \n"
 				+ "I heard them say we've reached Morrowind." + "\n" + "I'm sure they'll let us go. \n"
 				+ "Quiet here comes the guard.");
 
@@ -78,7 +103,9 @@ public class Story001 {
 
 		System.out.println("||Character Creation\n" + "------------------");
 
-		System.out.println("1. Argonian");
+		System.out.println();
+
+		System.out.println("1. Argonian\n" + "2. Atlmer");
 	}
 
 }
