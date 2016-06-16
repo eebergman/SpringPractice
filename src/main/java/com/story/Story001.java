@@ -7,6 +7,7 @@ import com.app.MyUtilities;
 public class Story001 {
 
 	private static Scanner SB = new Scanner(System.in);
+
 	@SuppressWarnings("unused")
 	private static String ADVANCE = null;
 
@@ -58,9 +59,7 @@ public class Story001 {
 
 		System.out.println("[Jiub]\n" + "What's your name?");
 
-		charName = SB.nextLine();
-
-		charName = MyUtilities.changeToUpper(charName);
+		charName = MyUtilities.changeToUpper(SB.nextLine()); 
 
 		while (charName.length() <= 2) {
 
