@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-autowire="byName">
+
+
+	<bean id="character" class="com.character.Character">
+		<constructor-arg name="userName" value="x-name"></constructor-arg>
+		<constructor-arg name="userRace" value="x-race"></constructor-arg>
+		<constructor-arg name="userGender" value="x-gender"
+			type="java.lang.Boolean">
+		</constructor-arg>
+		<constructor-arg name="userClass" value="x-class"
+			type="com.character.PlayerClass">
+		</constructor-arg>
+		<constructor-arg name="userStarSign" value="x-sign"></constructor-arg>
+		<constructor-arg name="userHP" value="x-hp"></constructor-arg>
+		<constructor-arg name="userMP" value="x-mp"></constructor-arg>
+	</bean>
+
+	<bean id="race" class="com.character.Race"></bean>
+
+	
+	<bean id="altmer" class="com.race.Altmer">
+		<constructor-arg name="description"
+			value="The Altmer are a tall, golden-skinned race, hail from Summerset Isle. They are also know as High Elves.">
+		</constructor-arg>
+	</bean>
+
+	<bean id="argonian" class="com.race.Argonian">
+		<constructor-arg name="description"
+			value='The reptilian natives of Black Marsh, a vast swampland province in southeastern.'>
+		</constructor-arg>
+	</bean>
+
+	<bean id="bosmer" class="com.race.Bosmer">
+		<constructor-arg name="description"
+			value="The Bosmer are the Elven clan-folk of Valenwood, a forested province in southwestern Tamriel.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="breton" class="com.race.Breton">
+		<constructor-arg name="description"
+			value="Bretons are the human descendants of the Aldmeri-Nedic Manmer of the Merethic Era and are now the inhabitants of the province of High Rock.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="dunmer" class="com.race.Dunmer">
+		<constructor-arg name="description"
+			value="The Dunmer, also known as Dark Elves, are the ash-skinned, typically red-eyed elven peoples of Morrowind.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="Imperial" class="com.race.Imperial">
+		<constructor-arg name="description"
+			value="Imperials are the well-educated and well-spoken natives of the civilized, cosmopolitan province of Cyrodiil.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="khajiit" class="com.race.Khajiit">
+		<constructor-arg name="description"
+			value="Khajiit are cat-like people who come from Elsweyr, known for high intelligence and agility.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="nord" class="com.race.Nord">
+		<constructor-arg name="description"
+			value="The Nords are the children of the sky, a race of tall and fair-haired humans from Skyrim who are known for their incredible resistance to cold and magical frost.">
+		</constructor-arg>
+	</bean>
+	
+	<bean id="orc" class="com.race.Orc">
+		<constructor-arg name="description"
+			value='Also called Orsimer, are sophisticated, beastlike people of the Wrothgarian Mountains, Dragontail Mountains, and Orsinium'>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="redguard" class="com.race.Redguard">
+		<constructor-arg name="description"
+			value="Redguards are the most naturally talented warriors in Tamriel, the dark-skinned, wiry-haired people of Hammerfell">
+		</constructor-arg>
+	</bean>
+	
+</beans>
