@@ -47,4 +47,13 @@ public class MyUtilities {
 
 	}
 
+	public static int noBetween1And10(int goodNumber) {
+
+		if ((goodNumber >= 1) && (goodNumber <= 10)) {
+			return goodNumber;
+		}
+
+		return 0;
+	}
+
 }

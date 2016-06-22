@@ -1,5 +1,6 @@
 package com.character;
 
+import com.attributes.Agility;
 import com.character.Race.Races;
 
 public class Character {
@@ -12,6 +13,7 @@ public class Character {
 	public StarSign userStarSign;
 
 	// Character Attributes
+	public Agility agility;
 
 	// Character Skills
 

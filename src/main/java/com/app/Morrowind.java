@@ -30,14 +30,13 @@ public class Morrowind {
 		System.out.println("\nMORROWIND\n\n");
 
 		Story001.instructions();
-
 		SB.close();
 
 	}
 
 	public void goodbyeUser() {
 		System.out.println("Thanks for playing the Morrowind Choose Your Own Adventure Game!");
-
+		System.exit(0);
 	}
 
 }

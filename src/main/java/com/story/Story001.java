@@ -52,7 +52,8 @@ public class Story001 {
 
 		story001_C(ADVANCE = SB.nextLine());
 	}
-
+	
+//This Method is top choose the player name
 	public static void story001_C(String whoAreyou) {
 
 		String charName = "a";
@@ -77,7 +78,7 @@ public class Story001 {
 
 	public static void story001_D(String playerName) {
 
-		System.out.println("\nWell, " + playerName + " not even last night's storm could wake you. \n"
+		System.out.println("\nWell, " + playerName + ", not even last night's storm could wake you. \n"
 				+ "I heard them say we've reached Morrowind." + "\n" + "I'm sure they'll let us go. \n"
 				+ "Quiet here comes the guard.");
 
@@ -100,11 +101,58 @@ public class Story001 {
 		System.out.println(
 				"[Another Imperial Guard]\n" + "You've finally arrived, but our records don't show from where.\n");
 
-		System.out.println("||Character Creation\n" + "------------------");
-
-		System.out.println();
-
-		System.out.println("1. Argonian\n" + "2. Atlmer");
+		story001_E();
+		
 	}
 
+//This Method is used to select the player race
+	
+	private static void story001_E() {
+		
+		System.out.println("||Character Creation\n" + "------------------");
+
+		System.out.println(""
+				+ "1. Argonian\n" 
+				+ "2. Atlmer\n"
+				+ "3. Bosmer\n"
+				+ "4. Breton\n"
+				+ "5. Dunmer\n"
+				+ "6. Imperial\n"
+				+ "7. Khajiit\n"
+				+ "8. Nord\n"
+				+ "9. Orc\n"
+				+ "10. Redguard");
+		
+		String raceChoice = SB.nextLine();
+		
+		raceChoice = MyUtilities.isItANumber(raceChoice);
+		
+		while (raceChoice.equalsIgnoreCase("a")) {
+			System.out.println("Please select a number.");
+			
+			raceChoice = SB.nextLine();
+		}
+		
+		int raceChoiceNumber = MyUtilities.noBetween1And10(Integer.parseInt(raceChoice));
+		
+		while (raceChoiceNumber <= 0) {
+			System.out.println("Please choose the correct number");
+		}
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
