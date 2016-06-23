@@ -2,20 +2,20 @@ package com.attributes;
 
 public class Intelligence {
 
-	public int intelligenceLvL;
+	public int intelligenceLvl;
 
-	public void setIntelligenceLvL(int intelligenceLvL) {
-		this.intelligenceLvL = intelligenceLvL;
+	public void setIntelligenceLvl(int intelligenceLvl) {
+		this.intelligenceLvl = intelligenceLvl;
 	}
 
-	public Intelligence(int intelligenceLvL) {
+	public Intelligence(int intelligenceLvl) {
 		super();
-		this.intelligenceLvL = intelligenceLvL;
+		this.intelligenceLvl = intelligenceLvl;
 	}
 
 	@Override
 	public String toString() {
-		return "Intelligence [intelligenceLvL=" + intelligenceLvL + "]";
+		return "Intelligence [intelligenceLvl=" + intelligenceLvl + "]";
 	}
 
 }

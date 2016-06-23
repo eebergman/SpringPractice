@@ -2,20 +2,20 @@ package com.attributes;
 
 public class Endurance {
 
-	public int enduranceLvL;
+	public int enduranceLvl;
 
-	public void setEnduranceLvL(int enduranceLvL) {
-		this.enduranceLvL = enduranceLvL;
+	public void setEnduranceLvl(int enduranceLvl) {
+		this.enduranceLvl = enduranceLvl;
 	}
 
-	public Endurance(int enduranceLvL) {
+	public Endurance(int enduranceLvl) {
 		super();
-		this.enduranceLvL = enduranceLvL;
+		this.enduranceLvl = enduranceLvl;
 	}
 
 	@Override
 	public String toString() {
-		return "Endurance [enduranceLvL=" + enduranceLvL + "]";
+		return "Endurance [enduranceLvl=" + enduranceLvl + "]";
 	}
 
 	// Determines health points and Fatigue

@@ -4,4 +4,38 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+	<bean id="agility" class="com.attributes.Agility">
+		<constructor-arg name="agilityLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
+	<bean id="endurance" class="com.attributes.Endurance">
+		<constructor-arg name="enduranceLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
+	<bean id="intelligence" class="com.attributes.Intelligence">
+		<constructor-arg name="intelligenceLvl" type="int"
+			value="40"></constructor-arg>
+	</bean>
+
+	<bean id="luck" class="com.attributes.Luck">
+		<constructor-arg name="luckLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
+	<bean id="personality" class="com.attributes.Personality">
+		<constructor-arg name="personalityLvl" type="int"
+			value="40"></constructor-arg>
+	</bean>
+
+	<bean id="speed" class="com.attributes.Speed">
+		<constructor-arg name="speedLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
+	<bean id="strength" class="com.attributes.Strength">
+		<constructor-arg name="strengthLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
+	<bean id="willpower" class="com.attributes.Willpower">
+		<constructor-arg name="willpowerLvl" type="int" value="40"></constructor-arg>
+	</bean>
+
 </beans>
