@@ -1,1 +1,2 @@
-web: java %JAVA_OPTS% -cp target\classes;"target\dependency\*"  Morrowind
+web: java %JAVA_OPTS% -cp target/classes;target/dependency/* Morrowwind
+ 
